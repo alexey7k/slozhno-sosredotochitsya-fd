@@ -5,12 +5,111 @@
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --main-font: 'IBM Plex Mono';
+  --color-bg: #FFF1F7;
+  --color-text: #353430;
+  --color-title: #FFC2E6;
+  --color-selection-title: #353430;
+  --color-theme-menu: #353430;
+  --color-decor-rec: transparent;
+  --accent-color: #FF8DCB;
+  --accent-color-text: #353430;
+  --accent-color-hover: rgba(53, 52, 48, 0.4);
+  --bg-image: url(../images/cover-image-light.png);
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-font: 'IBM Plex Mono';
+    --color-bg: #FFF1F7;
+    --color-text: #353430;
+    --color-title: #FFC2E6;
+    --color-selection-title: #353430;
+    --color-theme-menu: #353430;
+    --color-decor-rec: transparent;
+    --accent-color: #FF8DCB;
+    --accent-color-text: #353430;
+    --accent-color-hover: rgba(53, 52, 48, 0.4);
+    --bg-image: url(../images/cover-image-light.png);
+  }
 }
+
+/* Остальные стили, только при необходимости */ 
+
+/*
+.theme-light .page {
+  color: var(--color-text, #353430);
+  background-color: var(--color-bg, #FFC2E6);
+  font-family: var(--main-font, sans-serif);
+  background-image: var(--bg-image);
+}
+
+.theme-light .decorated-zone::before {
+  border-top: 1px solid var(--color-theme-menu, #353430);
+  border-right: 1px solid var(--color-theme-menu, #353430);
+}
+
+.theme-light .decorated-zone::after {
+  border-bottom: 1px solid var(--color-theme-menu, #353430);
+  border-left: 1px solid var(--color-theme-menu, #353430);
+}
+
+.theme-light .header__theme-menu::before {
+  display: none;
+}
+
+.theme-light .header__theme-menu-list {
+  color: var(--color-theme-menu, #353430);
+}
+
+.theme-light .header__theme-menu-list::before {
+  display: none;
+}
+
+.theme-light .header__theme-menu-item:has(:hover) {
+  border: 1px solid var(--accent-color-hover);
+}
+
+.theme-light .header__theme-menu-item:has(:focus-visible) {
+  border-bottom: 1px solid var(--color-theme-menu, #353430);
+}
+
+.theme-light .header__theme-menu-button_active {
+  outline: 1px solid var(--color-theme-menu, #353430);
+}
+
+.theme-light .header__logo {
+  text-shadow: 4px 4px 0 var(--accent-color, #FF8DCB);
+}
+
+.theme-light .decorated-logo {
+  color: var(--color-title, #FFC2E6);
+}
+
+.theme-light .link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color, #FF8DCB);
+}
+
+.theme-light .link:hover {
+  border-bottom: 1px solid var(--color-text, #353430);
+}
+  
+.theme-light .link:focus-visible {
+  outline: 1px solid var(--color-text, #353430);
+}
+
+.theme-light .decor {
+  background-color: var(--accent-color, #FF8DCB);
+  color: var(--color-text);
+  font-weight: bold;
+}
+
+.theme-light .content__section-title {
+  color: var(--color-selection-title, #353430);
+}
+
+.theme-light .footer {
+  text-shadow: 2px 2px 0 var(--accent-color, #FF8DCB);
+} */
